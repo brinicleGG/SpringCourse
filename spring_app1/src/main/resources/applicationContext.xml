@@ -9,8 +9,20 @@
 
     <context:property-placeholder location="classpath:musicPlayer.properties"/>
 
-    <bean id="musicBean"
+    <bean id="classicalMusicBean"
           class="ru.brinicle.springcourse.ClassicalMusic">
+    </bean>
+
+    <bean id="rockMusicBean"
+          class="ru.brinicle.springcourse.RockMusic">
+    </bean>
+
+    <bean id="popMusicBean"
+          class="ru.brinicle.springcourse.PopMusic">
+    </bean>
+
+    <bean id="musicBean"
+          class="ru.brinicle.springcourse.RockMusic">
     </bean>
 
     <bean id="musicPlayer"
@@ -19,6 +31,14 @@
 
         <property name="name" value="${musicPlayer.name}"/>
         <property name="volume" value="${musicPlayer.volume}"/>
+
+        <property name="musicList">
+            <list>
+                <ref bean="classicalMusicBean"></ref>
+                <ref bean="rockMusicBean"></ref>
+                <ref bean="popMusicBean"></ref>
+            </list>
+        </property>
     </bean>
 
 </beans>
