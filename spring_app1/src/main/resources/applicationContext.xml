@@ -26,7 +26,8 @@
     </bean>
 
     <bean id="musicPlayer"
-          class="ru.brinicle.springcourse.MusicPlayer">
+          class="ru.brinicle.springcourse.MusicPlayer"
+          scope="prototype">
         <property name="music" ref="musicBean"/>
 
         <property name="name" value="${musicPlayer.name}"/>
@@ -34,9 +35,9 @@
 
         <property name="musicList">
             <list>
-                <ref bean="classicalMusicBean"></ref>
-                <ref bean="rockMusicBean"></ref>
-                <ref bean="popMusicBean"></ref>
+                <ref bean="classicalMusicBean"/>
+                <ref bean="rockMusicBean"/>
+                <ref bean="popMusicBean"/>
             </list>
         </property>
     </bean>
