@@ -7,7 +7,7 @@
   <groupId>ru.brinicle.springcourse</groupId>
   <artifactId>spring_app1</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
 
   <name>spring_app1 Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
