@@ -13,7 +13,8 @@
           class="ru.brinicle.springcourse.ClassicalMusic"
         init-method="doMyInit"
         destroy-method="doMyDestroy"
-        scope="prototype">
+        scope="singleton"
+        factory-method="getClassicalMusic">
     </bean>
 
     <bean id="rockMusicBean"
