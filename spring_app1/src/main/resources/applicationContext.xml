@@ -13,37 +13,36 @@
           class="ru.brinicle.springcourse.ClassicalMusic"
         init-method="doMyInit"
         destroy-method="doMyDestroy"
-        scope="singleton"
         factory-method="getClassicalMusic">
     </bean>
 
-    <bean id="rockMusicBean"
-          class="ru.brinicle.springcourse.RockMusic">
-    </bean>
+<!--    <bean id="rockMusicBean"-->
+<!--          class="ru.brinicle.springcourse.RockMusic">-->
+<!--    </bean>-->
 
-    <bean id="popMusicBean"
-          class="ru.brinicle.springcourse.PopMusic">
-    </bean>
+<!--    <bean id="popMusicBean"-->
+<!--          class="ru.brinicle.springcourse.PopMusic">-->
+<!--    </bean>-->
 
-    <bean id="musicBean"
-          class="ru.brinicle.springcourse.RockMusic">
-    </bean>
+<!--    <bean id="musicBean"-->
+<!--          class="ru.brinicle.springcourse.RockMusic">-->
+<!--    </bean>-->
 
-    <bean id="musicPlayer"
-          class="ru.brinicle.springcourse.MusicPlayer"
-          scope="prototype">
-        <property name="music" ref="musicBean"/>
+<!--    <bean id="musicPlayer"-->
+<!--          class="ru.brinicle.springcourse.MusicPlayer"-->
+<!--          scope="prototype">-->
+<!--        <property name="music" ref="musicBean"/>-->
 
-        <property name="name" value="${musicPlayer.name}"/>
-        <property name="volume" value="${musicPlayer.volume}"/>
+<!--        <property name="name" value="${musicPlayer.name}"/>-->
+<!--        <property name="volume" value="${musicPlayer.volume}"/>-->
 
-        <property name="musicList">
-            <list>
-                <ref bean="classicalMusicBean"/>
-                <ref bean="rockMusicBean"/>
-                <ref bean="popMusicBean"/>
-            </list>
-        </property>
-    </bean>
+<!--        <property name="musicList">-->
+<!--            <list>-->
+<!--                <ref bean="classicalMusicBean"/>-->
+<!--                <ref bean="rockMusicBean"/>-->
+<!--                <ref bean="popMusicBean"/>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--    </bean>-->
 
 </beans>
